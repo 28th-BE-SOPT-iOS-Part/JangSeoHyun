@@ -11,10 +11,17 @@
 		92EEC7F1262ECD6600CD5510 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEC7F0262ECD6600CD5510 /* SceneDelegate.swift */; };
 		92EEC7F8262ECD6700CD5510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92EEC7F7262ECD6700CD5510 /* Assets.xcassets */; };
 		92EEC7FB262ECD6700CD5510 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EEC7F9262ECD6700CD5510 /* LaunchScreen.storyboard */; };
-		92EEC807262EF03A00CD5510 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEC806262EF03A00CD5510 /* LoginVC.swift */; };
 		92EEC80B262EF06400CD5510 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEC80A262EF06400CD5510 /* SignInVC.swift */; };
 		92EEC80E262EF07100CD5510 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEC80D262EF07100CD5510 /* SignUpVC.swift */; };
 		92EEC814262EF27000CD5510 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EEC813262EF27000CD5510 /* SignIn.storyboard */; };
+		92EEC81D262EFD5500CD5510 /* SignUpCompletedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEC81C262EFD5500CD5510 /* SignUpCompletedVC.swift */; };
+		92EEC823262EFDCB00CD5510 /* FriendTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EEC822262EFDCB00CD5510 /* FriendTab.storyboard */; };
+		92EEC826262EFDD600CD5510 /* ChatTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EEC825262EFDD600CD5510 /* ChatTab.storyboard */; };
+		92EEC829262EFDE800CD5510 /* HashtagTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EEC828262EFDE800CD5510 /* HashtagTab.storyboard */; };
+		92EEC82C262EFDFC00CD5510 /* ShoppingTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EEC82B262EFDFC00CD5510 /* ShoppingTab.storyboard */; };
+		92EEC82F262EFE0600CD5510 /* MoreTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EEC82E262EFE0600CD5510 /* MoreTab.storyboard */; };
+		92EEC835262F028800CD5510 /* TabbarSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EEC834262F028800CD5510 /* TabbarSetting.storyboard */; };
+		92EEC838262F05BE00CD5510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EEC837262F05BE00CD5510 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +31,17 @@
 		92EEC7F7262ECD6700CD5510 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92EEC7FA262ECD6700CD5510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92EEC7FC262ECD6700CD5510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92EEC806262EF03A00CD5510 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		92EEC80A262EF06400CD5510 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		92EEC80D262EF07100CD5510 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		92EEC813262EF27000CD5510 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		92EEC81C262EFD5500CD5510 /* SignUpCompletedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCompletedVC.swift; sourceTree = "<group>"; };
+		92EEC822262EFDCB00CD5510 /* FriendTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FriendTab.storyboard; sourceTree = "<group>"; };
+		92EEC825262EFDD600CD5510 /* ChatTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatTab.storyboard; sourceTree = "<group>"; };
+		92EEC828262EFDE800CD5510 /* HashtagTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HashtagTab.storyboard; sourceTree = "<group>"; };
+		92EEC82B262EFDFC00CD5510 /* ShoppingTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShoppingTab.storyboard; sourceTree = "<group>"; };
+		92EEC82E262EFE0600CD5510 /* MoreTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoreTab.storyboard; sourceTree = "<group>"; };
+		92EEC834262F028800CD5510 /* TabbarSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarSetting.storyboard; sourceTree = "<group>"; };
+		92EEC837262F05BE00CD5510 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +78,7 @@
 				92EEC811262EF0E600CD5510 /* Sources */,
 				92EEC7FC262ECD6700CD5510 /* Info.plist */,
 				92EEC7F9262ECD6700CD5510 /* LaunchScreen.storyboard */,
+				92EEC837262F05BE00CD5510 /* Main.storyboard */,
 			);
 			path = SOPT_28th_iOS_Assignment;
 			sourceTree = "<group>";
@@ -72,6 +87,12 @@
 			isa = PBXGroup;
 			children = (
 				92EEC813262EF27000CD5510 /* SignIn.storyboard */,
+				92EEC822262EFDCB00CD5510 /* FriendTab.storyboard */,
+				92EEC825262EFDD600CD5510 /* ChatTab.storyboard */,
+				92EEC828262EFDE800CD5510 /* HashtagTab.storyboard */,
+				92EEC82B262EFDFC00CD5510 /* ShoppingTab.storyboard */,
+				92EEC82E262EFE0600CD5510 /* MoreTab.storyboard */,
+				92EEC834262F028800CD5510 /* TabbarSetting.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -87,7 +108,9 @@
 		92EEC812262EF0F000CD5510 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				92EEC832262EFEC300CD5510 /* ChatTab */,
 				92EEC819262EF2C100CD5510 /* SignIn */,
+				92EEC831262EFE8F00CD5510 /* FriendTab */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -106,11 +129,25 @@
 		92EEC819262EF2C100CD5510 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				92EEC806262EF03A00CD5510 /* LoginVC.swift */,
 				92EEC80A262EF06400CD5510 /* SignInVC.swift */,
 				92EEC80D262EF07100CD5510 /* SignUpVC.swift */,
+				92EEC81C262EFD5500CD5510 /* SignUpCompletedVC.swift */,
 			);
 			path = SignIn;
+			sourceTree = "<group>";
+		};
+		92EEC831262EFE8F00CD5510 /* FriendTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FriendTab;
+			sourceTree = "<group>";
+		};
+		92EEC832262EFEC300CD5510 /* ChatTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChatTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,8 +207,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92EEC835262F028800CD5510 /* TabbarSetting.storyboard in Resources */,
+				92EEC838262F05BE00CD5510 /* Main.storyboard in Resources */,
+				92EEC826262EFDD600CD5510 /* ChatTab.storyboard in Resources */,
+				92EEC82F262EFE0600CD5510 /* MoreTab.storyboard in Resources */,
 				92EEC814262EF27000CD5510 /* SignIn.storyboard in Resources */,
+				92EEC829262EFDE800CD5510 /* HashtagTab.storyboard in Resources */,
 				92EEC7FB262ECD6700CD5510 /* LaunchScreen.storyboard in Resources */,
+				92EEC82C262EFDFC00CD5510 /* ShoppingTab.storyboard in Resources */,
+				92EEC823262EFDCB00CD5510 /* FriendTab.storyboard in Resources */,
 				92EEC7F8262ECD6700CD5510 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,10 +228,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				92EEC7EF262ECD6600CD5510 /* AppDelegate.swift in Sources */,
-				92EEC807262EF03A00CD5510 /* LoginVC.swift in Sources */,
 				92EEC7F1262ECD6600CD5510 /* SceneDelegate.swift in Sources */,
 				92EEC80E262EF07100CD5510 /* SignUpVC.swift in Sources */,
 				92EEC80B262EF06400CD5510 /* SignInVC.swift in Sources */,
+				92EEC81D262EFD5500CD5510 /* SignUpCompletedVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

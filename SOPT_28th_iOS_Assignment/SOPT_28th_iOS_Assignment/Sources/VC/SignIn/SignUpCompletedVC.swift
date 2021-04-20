@@ -1,5 +1,5 @@
 //
-//  LoginVC.swift
+//  SignUpCompletedVC.swift
 //  SOPT_28th_iOS_Assignment
 //
 //  Created by 장서현 on 2021/04/20.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class SignUpCompletedVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

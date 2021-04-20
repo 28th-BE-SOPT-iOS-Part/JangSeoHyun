@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--SignInVC-->
         <scene sceneID="70w-rg-zhx">
             <objects>
-                <viewController id="xmK-Z0-5dy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInVC" title="SignInVC" id="xmK-Z0-5dy" customClass="SignInVC" customModule="SOPT_28th_iOS_Assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hsi-ak-PQC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,10 +121,10 @@
             </objects>
             <point key="canvasLocation" x="-59.420289855072468" y="170.75892857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--SignUpVC-->
         <scene sceneID="WmB-gg-uVf">
             <objects>
-                <viewController id="QWi-CQ-pyT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpVC" title="SignUpVC" id="QWi-CQ-pyT" customClass="SignUpVC" customModule="SOPT_28th_iOS_Assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E9K-4g-jLk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -227,10 +227,10 @@
             </objects>
             <point key="canvasLocation" x="661" y="173"/>
         </scene>
-        <!--View Controller-->
+        <!--SignUpCompletedVC-->
         <scene sceneID="nUh-1n-aNA">
             <objects>
-                <viewController id="vSn-gn-7NG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpCompletedVC" title="SignUpCompletedVC" id="vSn-gn-7NG" customClass="SignUpCompletedVC" customModule="SOPT_28th_iOS_Assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BdQ-hT-afG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
