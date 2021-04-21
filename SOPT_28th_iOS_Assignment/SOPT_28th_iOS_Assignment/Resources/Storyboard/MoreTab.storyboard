@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="w8i-fQ-e5V"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="moon" catalog="system" selectedImage="moon.fill" id="QSu-OH-g9H">
+                    <tabBarItem key="tabBarItem" title="" image="detailTabIcon" selectedImage="detailTabIconSelected" id="QSu-OH-g9H">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -29,8 +29,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="moon" catalog="system" width="128" height="121"/>
-        <image name="moon.fill" catalog="system" width="128" height="121"/>
+        <image name="detailTabIcon" width="21" height="5"/>
+        <image name="detailTabIconSelected" width="21" height="5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

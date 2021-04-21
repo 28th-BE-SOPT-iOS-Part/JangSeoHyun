@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="gco-Jc-iSY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="lightbulb" catalog="system" selectedImage="lightbulb.fill" id="eod-mK-OzQ">
+                    <tabBarItem key="tabBarItem" title="" image="searchTabIcon" selectedImage="searchTabIconSelected" id="eod-mK-OzQ">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -29,8 +29,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="lightbulb" catalog="system" width="113" height="128"/>
-        <image name="lightbulb.fill" catalog="system" width="113" height="128"/>
+        <image name="searchTabIcon" width="15" height="17.5"/>
+        <image name="searchTabIconSelected" width="15" height="17.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

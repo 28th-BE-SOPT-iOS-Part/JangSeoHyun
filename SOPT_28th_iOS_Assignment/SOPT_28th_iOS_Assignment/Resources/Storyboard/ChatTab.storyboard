@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="8wR-ul-HUf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="bubble.left" catalog="system" selectedImage="bubble.left.fill" id="hTy-Wr-24t">
+                    <tabBarItem key="tabBarItem" title="" image="messageTabIcon" selectedImage="messageTabIconSelected" id="hTy-Wr-24t">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -29,8 +29,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bubble.left" catalog="system" width="128" height="110"/>
-        <image name="bubble.left.fill" catalog="system" width="128" height="110"/>
+        <image name="messageTabIcon" width="20.5" height="19.5"/>
+        <image name="messageTabIconSelected" width="20.5" height="19.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

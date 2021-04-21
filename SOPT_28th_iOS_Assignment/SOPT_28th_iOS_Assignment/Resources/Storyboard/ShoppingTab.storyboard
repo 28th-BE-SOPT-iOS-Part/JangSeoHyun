@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="82N-mv-6vD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="bag" catalog="system" selectedImage="bag.fill" id="VY1-eY-ZfO">
+                    <tabBarItem key="tabBarItem" title="" image="shopTabIcon" selectedImage="shopTabIconSelected" id="VY1-eY-ZfO">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -29,8 +29,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bag" catalog="system" width="128" height="128"/>
-        <image name="bag.fill" catalog="system" width="128" height="128"/>
+        <image name="shopTabIcon" width="19.5" height="19"/>
+        <image name="shopTabIconSelected" width="19.5" height="19"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
