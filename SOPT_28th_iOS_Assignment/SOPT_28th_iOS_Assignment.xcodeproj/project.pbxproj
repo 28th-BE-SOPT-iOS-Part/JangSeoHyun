@@ -22,6 +22,7 @@
 		92EEC82F262EFE0600CD5510 /* MoreTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EEC82E262EFE0600CD5510 /* MoreTab.storyboard */; };
 		92EEC835262F028800CD5510 /* TabbarSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EEC834262F028800CD5510 /* TabbarSetting.storyboard */; };
 		92EEC838262F05BE00CD5510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EEC837262F05BE00CD5510 /* Main.storyboard */; };
+		92EEC83C2631C52400CD5510 /* FriendProfileDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEC83B2631C52400CD5510 /* FriendProfileDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		92EEC82E262EFE0600CD5510 /* MoreTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoreTab.storyboard; sourceTree = "<group>"; };
 		92EEC834262F028800CD5510 /* TabbarSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarSetting.storyboard; sourceTree = "<group>"; };
 		92EEC837262F05BE00CD5510 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		92EEC83B2631C52400CD5510 /* FriendProfileDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendProfileDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		92EEC831262EFE8F00CD5510 /* FriendTab */ = {
 			isa = PBXGroup;
 			children = (
+				92EEC83B2631C52400CD5510 /* FriendProfileDetail.swift */,
 			);
 			path = FriendTab;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			files = (
 				92EEC7EF262ECD6600CD5510 /* AppDelegate.swift in Sources */,
 				92EEC7F1262ECD6600CD5510 /* SceneDelegate.swift in Sources */,
+				92EEC83C2631C52400CD5510 /* FriendProfileDetail.swift in Sources */,
 				92EEC80E262EF07100CD5510 /* SignUpVC.swift in Sources */,
 				92EEC80B262EF06400CD5510 /* SignInVC.swift in Sources */,
 				92EEC81D262EFD5500CD5510 /* SignUpCompletedVC.swift in Sources */,

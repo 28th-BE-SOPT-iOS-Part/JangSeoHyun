@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="-783" y="164"/>
         </scene>
-        <!--View Controller-->
+        <!--Friend Profile Detail-->
         <scene sceneID="cfB-zY-Mj6">
             <objects>
-                <viewController id="Ndz-B1-GYZ" sceneMemberID="viewController">
+                <viewController id="Ndz-B1-GYZ" customClass="FriendProfileDetail" customModule="SOPT_28th_iOS_Assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Dt-Ls-AJH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
