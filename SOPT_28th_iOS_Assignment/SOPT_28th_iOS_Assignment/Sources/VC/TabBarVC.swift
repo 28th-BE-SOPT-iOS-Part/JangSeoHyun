@@ -1,18 +1,19 @@
 //
-//  FriendProfileDetail.swift
+//  TabBarVC.swift
 //  SOPT_28th_iOS_Assignment
 //
-//  Created by 장서현 on 2021/04/22.
+//  Created by 장서현 on 2021/04/23.
 //
 
 import UIKit
 
-class FriendProfileDetail: UIViewController {
+class TabBarVC: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.tabBarController?.tabBar.isHidden = false
     }
     
 

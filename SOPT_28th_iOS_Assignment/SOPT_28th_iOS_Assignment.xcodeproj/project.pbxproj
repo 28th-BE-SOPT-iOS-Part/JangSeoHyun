@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		921888312632954100CAF86E /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921888302632954100CAF86E /* TabBarVC.swift */; };
 		92EEC7EF262ECD6600CD5510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEC7EE262ECD6600CD5510 /* AppDelegate.swift */; };
 		92EEC7F1262ECD6600CD5510 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEC7F0262ECD6600CD5510 /* SceneDelegate.swift */; };
 		92EEC7F8262ECD6700CD5510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92EEC7F7262ECD6700CD5510 /* Assets.xcassets */; };
@@ -22,10 +23,12 @@
 		92EEC82F262EFE0600CD5510 /* MoreTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EEC82E262EFE0600CD5510 /* MoreTab.storyboard */; };
 		92EEC835262F028800CD5510 /* TabbarSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EEC834262F028800CD5510 /* TabbarSetting.storyboard */; };
 		92EEC838262F05BE00CD5510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EEC837262F05BE00CD5510 /* Main.storyboard */; };
-		92EEC83C2631C52400CD5510 /* FriendProfileDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEC83B2631C52400CD5510 /* FriendProfileDetail.swift */; };
+		92EEC83C2631C52400CD5510 /* FriendProfileDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEC83B2631C52400CD5510 /* FriendProfileDetailVC.swift */; };
+		92EEC87126327D5500CD5510 /* FriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEC87026327D5500CD5510 /* FriendVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		921888302632954100CAF86E /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		92EEC7EB262ECD6500CD5510 /* SOPT_28th_iOS_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPT_28th_iOS_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92EEC7EE262ECD6600CD5510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92EEC7F0262ECD6600CD5510 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +46,8 @@
 		92EEC82E262EFE0600CD5510 /* MoreTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoreTab.storyboard; sourceTree = "<group>"; };
 		92EEC834262F028800CD5510 /* TabbarSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarSetting.storyboard; sourceTree = "<group>"; };
 		92EEC837262F05BE00CD5510 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		92EEC83B2631C52400CD5510 /* FriendProfileDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendProfileDetail.swift; sourceTree = "<group>"; };
+		92EEC83B2631C52400CD5510 /* FriendProfileDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendProfileDetailVC.swift; sourceTree = "<group>"; };
+		92EEC87026327D5500CD5510 /* FriendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 				92EEC832262EFEC300CD5510 /* ChatTab */,
 				92EEC819262EF2C100CD5510 /* SignIn */,
 				92EEC831262EFE8F00CD5510 /* FriendTab */,
+				921888302632954100CAF86E /* TabBarVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -141,7 +146,8 @@
 		92EEC831262EFE8F00CD5510 /* FriendTab */ = {
 			isa = PBXGroup;
 			children = (
-				92EEC83B2631C52400CD5510 /* FriendProfileDetail.swift */,
+				92EEC83B2631C52400CD5510 /* FriendProfileDetailVC.swift */,
+				92EEC87026327D5500CD5510 /* FriendVC.swift */,
 			);
 			path = FriendTab;
 			sourceTree = "<group>";
@@ -232,9 +238,11 @@
 			files = (
 				92EEC7EF262ECD6600CD5510 /* AppDelegate.swift in Sources */,
 				92EEC7F1262ECD6600CD5510 /* SceneDelegate.swift in Sources */,
-				92EEC83C2631C52400CD5510 /* FriendProfileDetail.swift in Sources */,
+				92EEC83C2631C52400CD5510 /* FriendProfileDetailVC.swift in Sources */,
 				92EEC80E262EF07100CD5510 /* SignUpVC.swift in Sources */,
 				92EEC80B262EF06400CD5510 /* SignInVC.swift in Sources */,
+				92EEC87126327D5500CD5510 /* FriendVC.swift in Sources */,
+				921888312632954100CAF86E /* TabBarVC.swift in Sources */,
 				92EEC81D262EFD5500CD5510 /* SignUpCompletedVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

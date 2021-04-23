@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xmK-Z0-5dy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KGr-gP-vpT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -16,25 +16,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오톡을 시작합니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdZ-LI-QvI">
-                                <rect key="frame" x="101" y="206" width="213" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오톡을 시작합니다" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdZ-LI-QvI">
+                                <rect key="frame" x="109.5" y="206" width="195.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXS-VH-0HC">
-                                <rect key="frame" x="61" y="253" width="293" height="59"/>
+                                <rect key="frame" x="61" y="250.5" width="293" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="eXH-Ov-vhx"/>
                                 </constraints>
                                 <string key="text">사용하던 카카오계정이 있다면
 이메일 또는 전화번호로 로그인해 주세요.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일 또는 전화번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FeE-SV-WiO">
-                                <rect key="frame" x="20" y="382" width="374" height="50"/>
+                                <rect key="frame" x="20" y="379.5" width="374" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="FeE-SV-WiO" secondAttribute="height" multiplier="187:25" id="ZMv-MK-gjW"/>
                                 </constraints>
@@ -42,7 +42,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ddr-s2-vII">
-                                <rect key="frame" x="20" y="435" width="374" height="1"/>
+                                <rect key="frame" x="20" y="432.5" width="374" height="1"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="F4l-GY-KOi"/>
@@ -50,14 +50,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZ8-f7-Lk6">
-                                <rect key="frame" x="20" y="494" width="374" height="1"/>
+                                <rect key="frame" x="20" y="491.5" width="374" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="tZ8-f7-Lk6" secondAttribute="height" multiplier="374:1" id="APP-Uq-8PQ"/>
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="oRi-ig-8q6">
-                                <rect key="frame" x="20" y="441" width="374" height="50"/>
+                                <rect key="frame" x="20" y="438.5" width="374" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="oRi-ig-8q6" secondAttribute="height" multiplier="187:25" id="0wa-xk-sms"/>
                                 </constraints>
@@ -65,7 +65,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUJ-RO-9z9">
-                                <rect key="frame" x="20" y="537" width="374" height="50"/>
+                                <rect key="frame" x="20" y="534.5" width="374" height="50"/>
                                 <color key="backgroundColor" red="0.96470588235294119" green="0.96073406930000005" blue="0.96470707649999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="SUJ-RO-9z9" secondAttribute="height" multiplier="187:25" id="RLY-lr-kAd"/>
@@ -74,9 +74,12 @@
                                 <state key="normal" title="카카오계정 로그인">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInBtn:" destination="xmK-Z0-5dy" eventType="touchUpInside" id="Cuh-dI-0T4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Erp-b4-6Nd">
-                                <rect key="frame" x="20" y="598" width="374" height="50"/>
+                                <rect key="frame" x="20" y="595.5" width="374" height="50"/>
                                 <color key="backgroundColor" red="0.96470588239999999" green="0.96073406930000005" blue="0.96470707649999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Erp-b4-6Nd" secondAttribute="height" multiplier="187:25" id="Pdo-KQ-mrc"/>
@@ -85,15 +88,18 @@
                                 <state key="normal" title="새로운 카카오계정 만들기">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="moveToSignUp:" destination="xmK-Z0-5dy" eventType="touchUpInside" id="ymg-8y-y0x"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hAT-EU-ydE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="FeE-SV-WiO" firstAttribute="leading" secondItem="hAT-EU-ydE" secondAttribute="leading" constant="20" id="0Mx-Vv-qOL"/>
-                            <constraint firstItem="hAT-EU-ydE" firstAttribute="trailing" secondItem="JdZ-LI-QvI" secondAttribute="trailing" constant="100" id="6zJ-jK-mkf"/>
                             <constraint firstItem="hAT-EU-ydE" firstAttribute="trailing" secondItem="SUJ-RO-9z9" secondAttribute="trailing" constant="20" id="A2q-ed-uY6"/>
                             <constraint firstItem="Ddr-s2-vII" firstAttribute="leading" secondItem="hsi-ak-PQC" secondAttribute="leading" constant="20" id="Haf-p7-zFj"/>
+                            <constraint firstItem="JdZ-LI-QvI" firstAttribute="centerX" secondItem="hsi-ak-PQC" secondAttribute="centerX" id="I6i-t5-4jP"/>
                             <constraint firstItem="hAT-EU-ydE" firstAttribute="trailing" secondItem="hXS-VH-0HC" secondAttribute="trailing" constant="60" id="KWx-bP-x7o"/>
                             <constraint firstItem="oRi-ig-8q6" firstAttribute="leading" secondItem="hAT-EU-ydE" secondAttribute="leading" constant="20" id="Kmi-eo-Knq"/>
                             <constraint firstItem="hAT-EU-ydE" firstAttribute="trailing" secondItem="Erp-b4-6Nd" secondAttribute="trailing" constant="20" id="Le2-1s-dhI"/>
@@ -105,7 +111,6 @@
                             <constraint firstItem="Ddr-s2-vII" firstAttribute="top" secondItem="FeE-SV-WiO" secondAttribute="bottom" constant="3" id="eTp-tx-uao"/>
                             <constraint firstItem="hXS-VH-0HC" firstAttribute="leading" secondItem="hAT-EU-ydE" secondAttribute="leading" constant="61" id="fFs-pf-ITA"/>
                             <constraint firstItem="hAT-EU-ydE" firstAttribute="trailing" secondItem="oRi-ig-8q6" secondAttribute="trailing" constant="20" id="ffE-dZ-yvH"/>
-                            <constraint firstItem="JdZ-LI-QvI" firstAttribute="leading" secondItem="hAT-EU-ydE" secondAttribute="leading" constant="101" id="fzL-Yz-lBt"/>
                             <constraint firstItem="Erp-b4-6Nd" firstAttribute="top" secondItem="SUJ-RO-9z9" secondAttribute="bottom" constant="11" id="ghs-Yt-gaA"/>
                             <constraint firstItem="JdZ-LI-QvI" firstAttribute="top" secondItem="hAT-EU-ydE" secondAttribute="top" constant="162" id="j9m-0w-7zg"/>
                             <constraint firstItem="Erp-b4-6Nd" firstAttribute="leading" secondItem="hAT-EU-ydE" secondAttribute="leading" constant="20" id="jO3-0o-edq"/>
@@ -116,10 +121,15 @@
                             <constraint firstItem="hAT-EU-ydE" firstAttribute="trailing" secondItem="FeE-SV-WiO" secondAttribute="trailing" constant="20" id="vwn-Ud-Uah"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="bwE-mX-ehD"/>
+                    <connections>
+                        <outlet property="idTextField" destination="FeE-SV-WiO" id="se8-sd-Pws"/>
+                        <outlet property="pwTextField" destination="oRi-ig-8q6" id="4ow-Kt-AfT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UFG-tV-wzd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-59.420289855072468" y="170.75892857142856"/>
+            <point key="canvasLocation" x="850.72463768115949" y="170.75892857142856"/>
         </scene>
         <!--SignUpVC-->
         <scene sceneID="WmB-gg-uVf">
@@ -129,21 +139,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오톡을 시작합니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yo5-79-hxa">
-                                <rect key="frame" x="101" y="215" width="213" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오톡을 시작합니다" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yo5-79-hxa">
+                                <rect key="frame" x="109.5" y="215" width="195.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAQ-VA-frl">
-                                <rect key="frame" x="20" y="534" width="374" height="1"/>
+                                <rect key="frame" x="20" y="531.5" width="374" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cAQ-VA-frl" secondAttribute="height" multiplier="374:1" id="MsB-cS-pBc"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4N-dd-XHD">
-                                <rect key="frame" x="20" y="475" width="374" height="1"/>
+                                <rect key="frame" x="20" y="472.5" width="374" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="GRj-M6-GpY"/>
@@ -151,14 +161,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zz6-ZF-3WH">
-                                <rect key="frame" x="20" y="416" width="374" height="1"/>
+                                <rect key="frame" x="20" y="413.5" width="374" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Zz6-ZF-3WH" secondAttribute="height" multiplier="374:1" id="ZIP-hv-dVB"/>
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일 또는 전화번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kyj-Ng-VUv">
-                                <rect key="frame" x="20" y="363" width="374" height="50"/>
+                                <rect key="frame" x="20" y="360.5" width="374" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="kyj-Ng-VUv" secondAttribute="height" multiplier="187:25" id="LgE-vn-wa2"/>
                                 </constraints>
@@ -166,7 +176,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호 확인" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="c4e-Ym-ozq">
-                                <rect key="frame" x="20" y="481" width="374" height="50"/>
+                                <rect key="frame" x="20" y="478.5" width="374" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="c4e-Ym-ozq" secondAttribute="height" multiplier="187:25" id="K5v-Ry-L7k"/>
                                 </constraints>
@@ -174,7 +184,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUd-l6-7m2">
-                                <rect key="frame" x="20" y="598" width="374" height="50"/>
+                                <rect key="frame" x="20" y="595.5" width="374" height="50"/>
                                 <color key="backgroundColor" red="0.96470588239999999" green="0.96073406930000005" blue="0.96470707649999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="IUd-l6-7m2" secondAttribute="height" multiplier="187:25" id="iK5-p4-AGq"/>
@@ -183,9 +193,12 @@
                                 <state key="normal" title="새로운 카카오계정 만들기">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="moveToFriendTab:" destination="QWi-CQ-pyT" eventType="touchUpInside" id="BRx-Hk-OnM"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ofa-8H-ctE">
-                                <rect key="frame" x="20" y="422" width="374" height="50"/>
+                                <rect key="frame" x="20" y="419.5" width="374" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ofa-8H-ctE" secondAttribute="height" multiplier="187:25" id="UGB-jS-lJB"/>
                                 </constraints>
@@ -196,7 +209,6 @@
                         <viewLayoutGuide key="safeArea" id="N0R-Bm-xKc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Yo5-79-hxa" firstAttribute="leading" secondItem="N0R-Bm-xKc" secondAttribute="leading" constant="101" id="06b-A3-rvF"/>
                             <constraint firstItem="ofa-8H-ctE" firstAttribute="leading" secondItem="N0R-Bm-xKc" secondAttribute="leading" constant="20" id="3Hv-iU-aMa"/>
                             <constraint firstItem="N0R-Bm-xKc" firstAttribute="trailing" secondItem="kyj-Ng-VUv" secondAttribute="trailing" constant="20" id="8Qe-zN-hjw"/>
                             <constraint firstItem="IUd-l6-7m2" firstAttribute="leading" secondItem="N0R-Bm-xKc" secondAttribute="leading" constant="20" id="F2j-cf-xd4"/>
@@ -215,17 +227,22 @@
                             <constraint firstItem="kyj-Ng-VUv" firstAttribute="leading" secondItem="N0R-Bm-xKc" secondAttribute="leading" constant="20" id="eJe-NG-XOL"/>
                             <constraint firstItem="c4e-Ym-ozq" firstAttribute="leading" secondItem="N0R-Bm-xKc" secondAttribute="leading" constant="20" id="fYh-WM-ar0"/>
                             <constraint firstItem="kyj-Ng-VUv" firstAttribute="top" secondItem="Yo5-79-hxa" secondAttribute="bottom" constant="119" id="hEf-1o-WzG"/>
-                            <constraint firstItem="N0R-Bm-xKc" firstAttribute="trailing" secondItem="Yo5-79-hxa" secondAttribute="trailing" constant="100" id="lGK-ld-R1u"/>
+                            <constraint firstItem="Yo5-79-hxa" firstAttribute="centerX" secondItem="E9K-4g-jLk" secondAttribute="centerX" id="hNf-Ig-dqA"/>
                             <constraint firstItem="cAQ-VA-frl" firstAttribute="top" secondItem="c4e-Ym-ozq" secondAttribute="bottom" constant="3" id="nLL-1M-rNP"/>
                             <constraint firstItem="cAQ-VA-frl" firstAttribute="leading" secondItem="E9K-4g-jLk" secondAttribute="leading" constant="20" id="qjc-Ky-Nqv"/>
                             <constraint firstAttribute="trailing" secondItem="cAQ-VA-frl" secondAttribute="trailing" constant="20" id="rnf-cz-IyD"/>
                             <constraint firstItem="N0R-Bm-xKc" firstAttribute="trailing" secondItem="c4e-Ym-ozq" secondAttribute="trailing" constant="20" id="tKP-yj-a9M"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="idTextField" destination="kyj-Ng-VUv" id="jf8-kh-p1w"/>
+                        <outlet property="pwCheckTextField" destination="c4e-Ym-ozq" id="qRc-Qw-oyL"/>
+                        <outlet property="pwTextField" destination="ofa-8H-ctE" id="GL9-Zj-Ico"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vJC-Tr-POw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="661" y="173"/>
+            <point key="canvasLocation" x="1571.0144927536232" y="172.76785714285714"/>
         </scene>
         <!--SignUpCompletedVC-->
         <scene sceneID="nUh-1n-aNA">
@@ -282,7 +299,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dnQ-dD-DZo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1366.6666666666667" y="170.75892857142856"/>
+            <point key="canvasLocation" x="2276.8115942028985" y="170.75892857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qi6-J6-bG3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="KGr-gP-vpT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jHo-WA-bAX">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xmK-Z0-5dy" kind="relationship" relationship="rootViewController" id="ile-nR-poa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J85-5y-bW9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-59.420289855072468" y="170.75892857142856"/>
         </scene>
     </scenes>
     <resources>
