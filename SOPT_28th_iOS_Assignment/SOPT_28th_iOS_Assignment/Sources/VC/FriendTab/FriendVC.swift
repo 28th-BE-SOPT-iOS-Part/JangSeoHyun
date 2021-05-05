@@ -13,10 +13,22 @@ class FriendVC: UIViewController {
     
     var friendList : [FriendDataModel] = []
     
+    static var selectedSection : Int = 0
+    static var selectedImgName : String = ""
+    static var selectedName : String = ""
+    
     static func makeMyPreview() -> UIViewController {
         let storyboard = UIStoryboard(name: "FriendTab", bundle: nil)
         let dvc = storyboard.instantiateViewController(withIdentifier: "FriendProfileDetailVC") as! FriendProfileDetailVC
-        print("생각해보니까 여기서 데이터 전달이 되야되는거 아녀?")
+        
+        if selectedSection == 0 {
+            dvc.imgName = "friendtabProfileImg"
+            dvc.name = "장서현"
+        }
+        else {
+            dvc.imgName = selectedImgName
+            dvc.name = selectedName
+        }
         return dvc
     }
     
@@ -132,8 +144,11 @@ extension FriendVC : UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, contextMenuConfigurationForRowAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
+        FriendVC.selectedSection = indexPath.section
+        FriendVC.selectedImgName = friendList[indexPath.row].imageName
+        FriendVC.selectedName = friendList[indexPath.row].name
+        
         return UIContextMenuConfiguration(identifier: nil, previewProvider: FriendVC.makeMyPreview) { suggestedActions in
-
             let chat = UIAction(title: "채팅하기", image: nil) { _ in
                 print("메뉴 - 채팅하기")
             }
@@ -153,13 +168,19 @@ extension FriendVC : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willPerformPreviewActionForMenuWith configuration: UIContextMenuConfiguration, animator: UIContextMenuInteractionCommitAnimating) {
         animator.addCompletion {
-            let controller = self.storyboard?.instantiateViewController(withIdentifier: "FriendProfileDetailVC") as! FriendProfileDetailVC
-            controller.modalPresentationStyle = .fullScreen
+            let dvc = self.storyboard?.instantiateViewController(withIdentifier: "FriendProfileDetailVC") as! FriendProfileDetailVC
+            dvc.modalPresentationStyle = .fullScreen
+        
+            if FriendVC.selectedSection == 0 {
+                dvc.imgName = "friendtabProfileImg"
+                dvc.name = "장서현"
+            }
+            else {
+                dvc.imgName = FriendVC.selectedImgName
+                dvc.name = FriendVC.selectedName
+            }
             
-            let section = self.friendListTV.indexPathForSelectedRow?.section
-            let hi = tableView.indexPathForSelectedRow?.row
-            
-            self.present(controller, animated: true, completion: nil)
+            self.present(dvc, animated: true, completion: nil)
         }
     }
     
