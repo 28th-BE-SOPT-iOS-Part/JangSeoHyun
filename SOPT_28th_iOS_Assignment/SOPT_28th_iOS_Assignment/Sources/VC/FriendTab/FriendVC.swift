@@ -7,20 +7,21 @@
 
 import UIKit
 
-//protocol ProfileDetailProtocol {
-//    func sendData(img: String, name: String)
-//}
-
 class FriendVC: UIViewController {
 
     @IBOutlet weak var friendListTV: UITableView!
     
     var friendList : [FriendDataModel] = []
-//    var delegate : ProfileDetailProtocol?
+    
+    static func makeMyPreview() -> UIViewController {
+        let storyboard = UIStoryboard(name: "FriendTab", bundle: nil)
+        let dvc = storyboard.instantiateViewController(withIdentifier: "FriendProfileDetailVC") as! FriendProfileDetailVC
+        print("생각해보니까 여기서 데이터 전달이 되야되는거 아녀?")
+        return dvc
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBarController?.tabBar.isHidden = false
         setFriendList()
         friendListTV.delegate = self
         friendListTV.dataSource = self
@@ -130,6 +131,38 @@ extension FriendVC : UITableViewDelegate {
         return UISwipeActionsConfiguration(actions: [blockAction, hideAction])
     }
     
+    func tableView(_ tableView: UITableView, contextMenuConfigurationForRowAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
+        return UIContextMenuConfiguration(identifier: nil, previewProvider: FriendVC.makeMyPreview) { suggestedActions in
+
+            let chat = UIAction(title: "채팅하기", image: nil) { _ in
+                print("메뉴 - 채팅하기")
+            }
+            let voiceTalk = UIAction(title: "보이스톡", image: nil) { action in
+                print("메뉴 - 보이스톡")
+            }
+            let faceTalk = UIAction(title: "페이스톡", image: nil) {action in
+                print("메뉴 - 페이스톡")
+            }
+            let present = UIAction(title: "선물하기", image: nil) { action in
+                print("메뉴 - 선물하기")
+            }
+
+            return UIMenu(title: "", children: [chat, voiceTalk, faceTalk, present])
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, willPerformPreviewActionForMenuWith configuration: UIContextMenuConfiguration, animator: UIContextMenuInteractionCommitAnimating) {
+        animator.addCompletion {
+            let controller = self.storyboard?.instantiateViewController(withIdentifier: "FriendProfileDetailVC") as! FriendProfileDetailVC
+            controller.modalPresentationStyle = .fullScreen
+            
+            let section = self.friendListTV.indexPathForSelectedRow?.section
+            let hi = tableView.indexPathForSelectedRow?.row
+            
+            self.present(controller, animated: true, completion: nil)
+        }
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         guard let dvc = self.storyboard?.instantiateViewController(identifier: "FriendProfileDetailVC") as? FriendProfileDetailVC else {return}
@@ -141,7 +174,6 @@ extension FriendVC : UITableViewDelegate {
             self.present(dvc, animated: true, completion: nil)
         }
         else {
-//            delegate?.sendData(img: friendList[indexPath.row].imageName, name: friendList[indexPath.row].name)
             dvc.imgName = friendList[indexPath.row].imageName
             dvc.name = friendList[indexPath.row].name
             self.present(dvc, animated: true, completion: nil)
