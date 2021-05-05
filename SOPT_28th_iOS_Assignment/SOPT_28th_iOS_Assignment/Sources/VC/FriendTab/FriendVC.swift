@@ -111,6 +111,25 @@ extension FriendVC : UITableViewDelegate {
         return 50
     }
     
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let hideAction = UIContextualAction(style: .normal, title: "숨김", handler: {
+            action, view, completionHandler in
+            print("스와이프 - 숨김")
+            completionHandler(true)
+        } )
+        
+        let blockAction = UIContextualAction(style: .normal, title: "차단", handler: {
+            action, view, completionHandler in
+            print("스와이프 -- 차단")
+            completionHandler(true)
+        })
+        
+        hideAction.backgroundColor = UIColor(red: 103/255, green: 107/255, blue: 114/255, alpha: 1.0)
+        blockAction.backgroundColor = UIColor(red: 207/255, green: 97/255, blue: 58/255, alpha: 1.0)
+
+        return UISwipeActionsConfiguration(actions: [blockAction, hideAction])
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         guard let dvc = self.storyboard?.instantiateViewController(identifier: "FriendProfileDetailVC") as? FriendProfileDetailVC else {return}
