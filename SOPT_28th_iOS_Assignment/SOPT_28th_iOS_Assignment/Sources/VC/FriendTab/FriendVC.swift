@@ -5,6 +5,10 @@
 //  Created by 장서현 on 2021/04/23.
 //
 
+// Action Sheet
+// TableView Cell Swipe Action
+// Context Menu
+
 import UIKit
 
 class FriendVC: UIViewController {
@@ -13,14 +17,17 @@ class FriendVC: UIViewController {
     
     var friendList : [FriendDataModel] = []
     
+    // TableViewCell -> Context Menu Preview 데이터 전달에 필요한 변수
     static var selectedSection : Int = 0
     static var selectedImgName : String = ""
     static var selectedName : String = ""
     
+    // Context Menu previewProvider
     static func makeMyPreview() -> UIViewController {
         let storyboard = UIStoryboard(name: "FriendTab", bundle: nil)
         let dvc = storyboard.instantiateViewController(withIdentifier: "FriendProfileDetailVC") as! FriendProfileDetailVC
         
+        // preview로 VC를 쓰는데 그 VC로 데이터 전달하는 부분
         if selectedSection == 0 {
             dvc.imgName = "friendtabProfileImg"
             dvc.name = "장서현"
@@ -29,8 +36,11 @@ class FriendVC: UIViewController {
             dvc.imgName = selectedImgName
             dvc.name = selectedName
         }
+        
         return dvc
     }
+    
+    // MARK: - viewDidLoad
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,6 +108,8 @@ class FriendVC: UIViewController {
             ])
         }
     
+    // MARK: - IBAction
+    
     @IBAction func settingActionSheet(_ sender: Any) {
         let setting = UIAlertController.init(title: nil, message: nil, preferredStyle: .actionSheet)
         
@@ -116,6 +128,8 @@ class FriendVC: UIViewController {
     
 }
 
+// MARK: - TableView Delegate
+
 extension FriendVC : UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
@@ -124,6 +138,7 @@ extension FriendVC : UITableViewDelegate {
         return 50
     }
     
+    // Cell Swipe Action
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let hideAction = UIContextualAction(style: .normal, title: "숨김", handler: {
             action, view, completionHandler in
@@ -143,11 +158,16 @@ extension FriendVC : UITableViewDelegate {
         return UISwipeActionsConfiguration(actions: [blockAction, hideAction])
     }
     
+    // MARK: - Context Menu
+    
+    // Context Menu Configuration
     func tableView(_ tableView: UITableView, contextMenuConfigurationForRowAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
+        /// 선택된 cell의 indexPath.section, indexPath.row 값 전역변수로 넘겨주는 부분
         FriendVC.selectedSection = indexPath.section
         FriendVC.selectedImgName = friendList[indexPath.row].imageName
         FriendVC.selectedName = friendList[indexPath.row].name
         
+        /// 메뉴 생성
         return UIContextMenuConfiguration(identifier: nil, previewProvider: FriendVC.makeMyPreview) { suggestedActions in
             let chat = UIAction(title: "채팅하기", image: nil) { _ in
                 print("메뉴 - 채팅하기")
@@ -166,11 +186,13 @@ extension FriendVC : UITableViewDelegate {
         }
     }
     
+    // Preview Touch Action, Segue
     func tableView(_ tableView: UITableView, willPerformPreviewActionForMenuWith configuration: UIContextMenuConfiguration, animator: UIContextMenuInteractionCommitAnimating) {
         animator.addCompletion {
             let dvc = self.storyboard?.instantiateViewController(withIdentifier: "FriendProfileDetailVC") as! FriendProfileDetailVC
             dvc.modalPresentationStyle = .fullScreen
-        
+            
+            /// section값 따라서 데이터 전달하는 부분
             if FriendVC.selectedSection == 0 {
                 dvc.imgName = "friendtabProfileImg"
                 dvc.name = "장서현"
@@ -185,7 +207,6 @@ extension FriendVC : UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         guard let dvc = self.storyboard?.instantiateViewController(identifier: "FriendProfileDetailVC") as? FriendProfileDetailVC else {return}
         dvc.modalPresentationStyle = .fullScreen
         if indexPath.section == 0 {
@@ -201,6 +222,8 @@ extension FriendVC : UITableViewDelegate {
         }
     }
 }
+
+// MARK: - TableView DataSource
 
 extension FriendVC : UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
