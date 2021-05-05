@@ -38,7 +38,7 @@ class SignInVC: UIViewController {
         }
         
         if id != "" && pw != "" {
-            goToFriendTab()
+//            goToFriendTab()
         }
         
         else {
@@ -50,7 +50,7 @@ class SignInVC: UIViewController {
     }
     
     @IBAction func moveToSignUp(_ sender: Any) {
-        guard let dvc = self.storyboard?.instantiateViewController(identifier: "SignUpVC") as? SignUpVC else {return}
-        self.navigationController?.pushViewController(dvc, animated: false)
+//        guard let dvc = self.storyboard?.instantiateViewController(identifier: "SignUpVC") as? SignUpVC else {return}
+//        self.navigationController?.pushViewController(dvc, animated: false)
     }
 }

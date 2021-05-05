@@ -42,7 +42,7 @@ class SignUpVC: UIViewController {
         }
 
         if id != "" && pw != "" && pwCheck != "" {
-            goToFriendTab()
+//            goToFriendTab()
         }
         
         else {

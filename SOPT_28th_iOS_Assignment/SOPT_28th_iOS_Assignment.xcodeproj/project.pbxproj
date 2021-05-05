@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		921888312632954100CAF86E /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921888302632954100CAF86E /* TabBarVC.swift */; };
+		92B1025D2642D07C003801C8 /* MyProfileTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B1025C2642D07C003801C8 /* MyProfileTVC.swift */; };
+		92B102612642D08C003801C8 /* FriendProfileTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B102602642D08C003801C8 /* FriendProfileTVC.swift */; };
+		92B1026C2642D5C6003801C8 /* FriendDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B1026B2642D5C6003801C8 /* FriendDataModel.swift */; };
 		92EEC7EF262ECD6600CD5510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEC7EE262ECD6600CD5510 /* AppDelegate.swift */; };
 		92EEC7F1262ECD6600CD5510 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEC7F0262ECD6600CD5510 /* SceneDelegate.swift */; };
 		92EEC7F8262ECD6700CD5510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92EEC7F7262ECD6700CD5510 /* Assets.xcassets */; };
@@ -29,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		921888302632954100CAF86E /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		92B1025C2642D07C003801C8 /* MyProfileTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileTVC.swift; sourceTree = "<group>"; };
+		92B102602642D08C003801C8 /* FriendProfileTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendProfileTVC.swift; sourceTree = "<group>"; };
+		92B1026B2642D5C6003801C8 /* FriendDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDataModel.swift; sourceTree = "<group>"; };
 		92EEC7EB262ECD6500CD5510 /* SOPT_28th_iOS_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPT_28th_iOS_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92EEC7EE262ECD6600CD5510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92EEC7F0262ECD6600CD5510 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +67,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92B102592642D01C003801C8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				92B1025B2642D032003801C8 /* More */,
+				92B1025A2642D025003801C8 /* Friend */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		92B1025A2642D025003801C8 /* Friend */ = {
+			isa = PBXGroup;
+			children = (
+				92B1025C2642D07C003801C8 /* MyProfileTVC.swift */,
+				92B102602642D08C003801C8 /* FriendProfileTVC.swift */,
+			);
+			path = Friend;
+			sourceTree = "<group>";
+		};
+		92B1025B2642D032003801C8 /* More */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		92B102632642D3EF003801C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92B102652642D3FC003801C8 /* More */,
+				92B102642642D3F7003801C8 /* Friend */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92B102642642D3F7003801C8 /* Friend */ = {
+			isa = PBXGroup;
+			children = (
+				92B1026B2642D5C6003801C8 /* FriendDataModel.swift */,
+			);
+			path = Friend;
+			sourceTree = "<group>";
+		};
+		92B102652642D3FC003801C8 /* More */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
 		92EEC7E2262ECD6500CD5510 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +161,8 @@
 		92EEC811262EF0E600CD5510 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				92B102632642D3EF003801C8 /* Model */,
+				92B102592642D01C003801C8 /* Cell */,
 				92EEC812262EF0F000CD5510 /* VC */,
 			);
 			path = Sources;
@@ -238,8 +295,11 @@
 			files = (
 				92EEC7EF262ECD6600CD5510 /* AppDelegate.swift in Sources */,
 				92EEC7F1262ECD6600CD5510 /* SceneDelegate.swift in Sources */,
+				92B1026C2642D5C6003801C8 /* FriendDataModel.swift in Sources */,
 				92EEC83C2631C52400CD5510 /* FriendProfileDetailVC.swift in Sources */,
+				92B102612642D08C003801C8 /* FriendProfileTVC.swift in Sources */,
 				92EEC80E262EF07100CD5510 /* SignUpVC.swift in Sources */,
+				92B1025D2642D07C003801C8 /* MyProfileTVC.swift in Sources */,
 				92EEC80B262EF06400CD5510 /* SignInVC.swift in Sources */,
 				92EEC87126327D5500CD5510 /* FriendVC.swift in Sources */,
 				921888312632954100CAF86E /* TabBarVC.swift in Sources */,

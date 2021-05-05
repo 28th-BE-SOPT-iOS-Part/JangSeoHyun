@@ -8,11 +8,19 @@
 import UIKit
 
 class FriendProfileDetailVC: UIViewController {
+        
+    @IBOutlet weak var profileImg: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    var imgName: String = ""
+    var name: String = ""
     
     var initialTouchPoint = CGPoint(x: 0, y: 0)
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        profileImg.image = UIImage(named: imgName)
+        nameLabel.text = name
         addDragActionToView()
         // Do any additional setup after loading the view.
     }
@@ -23,7 +31,7 @@ class FriendProfileDetailVC: UIViewController {
         let dragGesture = UIPanGestureRecognizer(target: self, action: #selector(dragDown))
         self.view.addGestureRecognizer(dragGesture)
     }
-    
+
     @objc func dragDown(
         _ sender : UIPanGestureRecognizer) {
         let touchPoint = sender.location(in: self.view.window)
