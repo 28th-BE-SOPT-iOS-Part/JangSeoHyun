@@ -35,6 +35,9 @@
                                             <constraint firstAttribute="width" secondItem="3ky-FU-DRI" secondAttribute="height" multiplier="1:1" id="wgA-KL-Mum"/>
                                         </constraints>
                                         <state key="normal" image="settingIcon"/>
+                                        <connections>
+                                            <action selector="settingActionSheet:" destination="9g1-Yu-luH" eventType="touchUpInside" id="hAf-CW-reN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

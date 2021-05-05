@@ -84,6 +84,23 @@ class FriendVC: UIViewController {
                                 state: "오늘 날씨 어때")
             ])
         }
+    
+    @IBAction func settingActionSheet(_ sender: Any) {
+        let setting = UIAlertController.init(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        let editAction = UIAlertAction.init(title: "편집", style: .default, handler: nil)
+        let manageAction = UIAlertAction.init(title: "친구 관리", style: .default, handler: nil)
+        let settingAction = UIAlertAction.init(title: "전체 설정", style: .default, handler: nil)
+        let cancelAction = UIAlertAction.init(title: "취소", style: .cancel, handler: nil)
+        
+        setting.addAction(editAction)
+        setting.addAction(manageAction)
+        setting.addAction(settingAction)
+        setting.addAction(cancelAction)
+        
+        self.present(setting, animated: true, completion: nil)
+    }
+    
 }
 
 extension FriendVC : UITableViewDelegate {
