@@ -29,27 +29,45 @@ class SignUpVC: UIViewController {
             self.present(tabBar, animated: true, completion: nil)
         }
     }
-    
+        
     @IBAction func moveToFriendTab(_ sender: Any) {
+
         if let idText = idTextField.text {
             id = idText
         }
         if let pwText = pwTextField.text {
             pw = pwText
         }
-        if let pwCheckText = pwCheckTextField.text {
-            pwCheck = pwCheckText
+        SignUpService.shared.signUp(email: id, password: pw, sex: "1", nickname: "rangoo", phone: "010-7557-9551", birth: "2000-01-06") { result in
+            switch result {
+            case .success(let message):
+                if let message = message as? String {
+                    self.makeRequestAlert(title: "알림", message: message, okAction: { _ in
+                        self.goToFriendTab()
+                    })
+                }
+            case .requestErr(let message):
+                if let message = message as? String{
+                    self.makeAlert(title: "알림",
+                                   message: message)
+                }
+            default :
+                print("error")
+            }
         }
-
-        if id != "" && pw != "" && pwCheck != "" {
-//            goToFriendTab()
-        }
-        
-        else {
-            let alert = UIAlertController.init(title: "필수 입력값을 확인해주세요", message: "", preferredStyle: .alert)
-            let okAction = UIAlertAction.init(title: "확인", style: .default, handler: nil)
-            alert.addAction(okAction)
-            present(alert, animated: false, completion: nil)
-        }
+//        if let pwCheckText = pwCheckTextField.text {
+//            pwCheck = pwCheckText
+//        }
+//
+//        if id != "" && pw != "" && pwCheck != "" {
+////            goToFriendTab()
+//        }
+//
+//        else {
+//            let alert = UIAlertController.init(title: "필수 입력값을 확인해주세요", message: "", preferredStyle: .alert)
+//            let okAction = UIAlertAction.init(title: "확인", style: .default, handler: nil)
+//            alert.addAction(okAction)
+//            present(alert, animated: false, completion: nil)
+//        }
     }
 }
